@@ -1,0 +1,12 @@
+repos:
+- repo: https://github.com/antonbabenko/pre-commit-terraform
+  rev: v1.78.0 # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
+  hooks:
+    - id: terragrunt_fmt
+    - id: terraform_fmt
+    - id: terragrunt_validate
+    - id: terraform_validate
+    - id: terraform_checkov
+    - id: terraform_providers_lock
+    - id: terraform_tflint
+    - id: terraform_tfsec
