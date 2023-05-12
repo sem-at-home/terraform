@@ -3,7 +3,7 @@ terraform {
   backend "s3" {
     bucket  = "sem-896653224309-terraform-state-bucket"
     encrypt = true
-    key     = "./terraform.tfstate"
+    key     = "sandbox/ssm-maintenance-window/terraform.tfstate"
     region  = "eu-west-1"
   }
 }

@@ -3,7 +3,7 @@ terraform {
   backend "s3" {
     bucket  = "sem-896653224309-terraform-state-bucket"
     encrypt = true
-    key     = "./terraform.tfstate"
+    key     = "sandbox/network/terraform.tfstate"
     region  = "eu-west-1"
   }
 }
